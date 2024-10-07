@@ -1,0 +1,199 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    color: #007bff;
+}
+
+/* Form Section Styles */
+.form-section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #343a40;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+textarea,
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* List Section Styles */
+.list-section {
+    background: #f1f1f1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#remisesList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#remisesList li {
+    background: white;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.popup {
+    display: none; /* Masqué par défaut */
+    position: fixed; /* Position fixe */
+    z-index: 1000; /* S'assure qu'il est au-dessus d'autres éléments */
+    left: 50%; /* Centrage horizontal */
+    top: 50%; /* Centrage vertical */
+    transform: translate(-50%, -50%); /* Ajustement pour centrer */
+    background-color: white; /* Fond blanc pour le popup */
+    border: 1px solid #ccc; /* Bordure autour du popup */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour le popup */
+    padding: 20px; /* Espacement à l'intérieur du popup */
+    width: 400px; /* Largeur du popup */
+    max-width: 90%; /* Pour éviter d'être trop large sur les petits écrans */
+    border-radius: 8px; /* Coins arrondis */
+}
+
+.popup-content {
+    position: relative; /* Nécessaire pour le positionnement du bouton de fermeture */
+}
+
+.close {
+    position: absolute; /* Positionnement absolu par rapport au parent */
+    top: 10px; /* Ajustement en haut */
+    right: 15px; /* Ajustement à droite */
+    cursor: pointer; /* Indique que c'est cliquable */
+    font-size: 20px; /* Taille de la croix */
+}
+
+#overlay {
+    display: none; /* Masqué par défaut */
+    position: fixed; /* Position fixe */
+    z-index: 900; /* Sous le popup */
+    top: 0; /* En haut */
+    left: 0; /* À gauche */
+    width: 100%; /* Prend toute la largeur */
+    height: 100%; /* Prend toute la hauteur */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond sombre transparent */
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f4f4f4;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px; /* Add padding */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.btn-add {
+    background-color: #39a1ea; /* Background color */
+    color: white; /* Text color */
+}
+
+.btn-add:hover {
+    background-color: #007bff; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.btn-edit {
+    background-color: #28a745; /* Green for edit */
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px);
+}
+
+.btn-delete {
+    background-color: #dc3545; /* Red for delete */
+    color: white;
+}
+
+.btn-delete:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: translateY(-2px);
+}
+
+/* Optional: Style for table buttons */
+.table button {
+    margin: 5px; /* Space between buttons */
+}
